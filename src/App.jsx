@@ -7,15 +7,23 @@ import ShoppingInput from './components/shoppingInput/shoppingInput';
 import ShoppingCart from './components/shoppingCart/shoppingCart';
 import { simpleAction } from './actions/simpleAction';
 
+const moment = require('moment');
+
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    // this.logout = this.logout.bind(this);
+  }
 
   simpleAction = (event) => {
     this.props.simpleAction();
   }
   render() {
+
   return (
     <div className="shopping-list" id="notebook">
-      <ShoppingHeader />
+      <ShoppingHeader/>
       <ShoppingInput />
       <ShoppingCart />
     </div>
