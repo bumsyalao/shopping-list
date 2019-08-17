@@ -283,6 +283,12 @@ body{
           color: red;
           background-color: none;
       }
+
+      &:disabled {
+        &:hover {
+          color: grey;
+        }
+      }
   }
 }
 
