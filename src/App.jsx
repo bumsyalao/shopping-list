@@ -1,6 +1,4 @@
-import React,{ Component } from 'react';
-import { connect } from 'react-redux';
-import logo from './logo.svg';
+import React, { Component, useState } from 'react';
 import './App.scss';
 import ShoppingHeader from './components/shoppingHeader/shoppingHeader';
 import ShoppingInput from './components/shoppingInput/shoppingInput';

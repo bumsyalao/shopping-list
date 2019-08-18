@@ -4,7 +4,7 @@ import './shoppingHeader.css';
 const moment = require('moment');
 
 
-class ShoppingHeader extends Component {
+export class ShoppingHeader extends Component {
   render() {
     return (
       <div>

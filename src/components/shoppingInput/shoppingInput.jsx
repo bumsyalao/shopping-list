@@ -5,7 +5,7 @@ import ShoppingCart from '../shoppingCart/shoppingCart';
 import { setBudget, addItem, getItems } from '../../actions/shoppingListActions';
 
 
-class ShoppingInput extends Component {
+export class ShoppingInput extends Component {
 
   constructor(props) {
     super(props);
@@ -28,7 +28,6 @@ class ShoppingInput extends Component {
     this.props.getItems();
   }}
   onChange(event) {
-    event.preventDefault();
     this.setState({
       [event.target.id]: event.target.value
     })
@@ -121,12 +120,9 @@ class ShoppingInput extends Component {
 const mapStateToProps = state => ({
   ...state,
   budget: state.shoppingListReducer.budget,
-  Items: state.shoppingListReducer.Items,
+  Items: state.shoppingListReducer.items,
 });
 
-// const mapDispatchToProps = dispatch => ({
-//   setBudget: () => dispatch(setBudget())
-//  })
 
 
 export default connect(mapStateToProps, { setBudget, addItem, getItems })(ShoppingInput);

@@ -1,10 +1,4 @@
 
-export const simpleAction = () => dispatch => {
-  dispatch({
-   type: 'SIMPLE_ACTION',
-   payload: 'result_of_simple_action',
-  })
- };
 
  export const setBudget = (budget) => dispatch => {
    dispatch({
@@ -12,12 +6,6 @@ export const simpleAction = () => dispatch => {
      payload: budget
    })
  };
-
- export const getBudget = () => dispatch => {
-  dispatch({
-    type: 'GET_BUDGET',
-  })
-};
 
 export const addItem = (Items) => dispatch => {
   dispatch({

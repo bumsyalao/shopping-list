@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shoppingList reducer return default state 1`] = `
+Object {
+  "budget": null,
+  "items": Array [],
+}
+`;
+
+exports[`shoppingList reducer should add item when addItem is called 1`] = `undefined`;
+
+exports[`shoppingList reducer should get items 1`] = `undefined`;
+
+exports[`shoppingList reducer should set budget when set budget is called 1`] = `5000`;

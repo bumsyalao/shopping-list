@@ -1,6 +1,6 @@
 let initialState = {
   budget: null,
-  Items: [],
+  items: [],
 }
 export default (state = initialState, action) => {
   switch (action.type) {
@@ -12,11 +12,11 @@ export default (state = initialState, action) => {
     
    case 'ADD_ITEM':
     let newState = {...state}
-     newState.Items.push(action.newItem);
+     newState.items.push(action.newItem);
      return newState
 
    case 'GET_ITEMS':
-     return state.Items
+     return state.items
 
    default:
     return state
